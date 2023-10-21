@@ -1,42 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Auto Tech</title>
-</head>
+    <style>
+      body {
+        font-family: "Helvetica Neue", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f6f6f6;
+      }
 
-<body>
-    <section class="title">
-        <h1>Auto Tech</h1>
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .navbar {
+        background-color: #1b1c21;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 20px;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .header {
+        text-align: center;
+        padding: 30px 0;
+      }
+
+      .header h1 {
+        font-size: 36px;
+      }
+
+      .header h2 {
+        font-size: 24px;
+        color: #ccc;
+      }
+
+      .features {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .feature {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .feature h3 {
+        font-size: 24px;
+        color: #333;
+      }
+
+      .feature p {
+        color: #666;
+      }
+
+      .contact {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .icons {
+        margin-top: 20px;
+      }
+
+      .icons a {
+        margin: 0 15px;
+        text-decoration: none;
+      }
+
+      .icons img {
+        width: 40px;
+        height: 40px;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #1b1c21;
+        color: #ccc;
+        padding: 20px 0;
+        width: 100%;
+      }
+
+      footer a {
+        color: #ccc;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <section class="header" id="home">
+        <h1>Your Roadside Guardian</h1>
         <h2>Expert Assistance for Beginner Drivers</h2>
-    </section>
+      </section>
 
-    <section class="questions">
-        <ul class="list">
-            <li>Your car won't start?</li>
-            <li>Got into a small accident?</li>
-            <li>Have nobody to call for help?</li>
-        </ul>
-    </section>
+      <section class="features">
+        <div class="feature">
+          <h3>Your car won't start?</h3>
+          <p>We're here to help you get back on the road quickly.</p>
+        </div>
+        <div class="feature">
+          <h3>Got into a small accident?</h3>
+          <p>Our expert technicians are just a call away.</p>
+        </div>
+        <div class="feature">
+          <h3>Have nobody to call for help?</h3>
+          <p>Contact us through your preferred platform.</p>
+        </div>
+      </section>
+    </div>
 
     <section class="contacts">
-        <h2>Contact Us</h2>
-        <h3>We're experienced car technicians ready to help!</h3>
-        <div class="icons">
-            <a href="https://t.me/cartechassist"><img src="telegram-icon.png" alt="Telegram Icon"></a>
-            <a href="https://m.me/cartechassist"><img src="messenger-icon.png" alt="Messenger Icon"></a>
-            <a href="https://wa.me/1234567890"><img src="viber-icon.png" alt="Viber Icon"></a>
-        </div>
+      <h2>Contact Us</h2>
+      <h3>We're experienced car technicians ready to help!</h3>
+      <div class="icons">
+        <a href="https://t.me/cartechassist"
+          ><img src="telegram-icon.png" alt="Telegram Icon"
+        /></a>
+        <a href="https://m.me/cartechassist"
+          ><img src="messenger-icon.png" alt="Messenger Icon"
+        /></a>
+        <a href="https://wa.me/1234567890"
+          ><img src="viber-icon.png" alt="Viber Icon"
+        /></a>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Auto Tech</p>
-        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      <p>&copy; 2023 CarTech Assist</p>
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
     </footer>
-</body>
-
+  </body>
 </html>
