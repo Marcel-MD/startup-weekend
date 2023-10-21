@@ -44,16 +44,8 @@ body {
     border-radius: 10px;
 }
 
-/* Style the banner image in the center of the page */
-.intro--banner img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
-    height: auto;
-}
-
 .header-spacer {
-  width: 200px;
+    width: 20em;
 }
 
 @media (max-width: 768px) {
@@ -70,29 +62,77 @@ body {
     }
 }
 
-/* Existing CSS styles as previously provided */
+/*Images fade in/out */
+.main-banner-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
 
-/* Style the slider container */
+.main-banner {
+    position: relative;
+    height: 400px;
+    width: 800px;
+    max-width: 100vw;
+}
+
+.main-banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.broke-car {
+    z-index: 1;
+}
+
+.new-car {
+    z-index: 2;
+    opacity: 1;
+}
+
+/*slides*/
+.slider {
+    display: flex;
+    gap: 20px;
+}
+
+.slide img {
+    width: 370px;
+    height: 240px;
+}
+
 .slider-container {
     width: 100%;
     overflow: hidden;
-    position: relative;
 }
 
-/* Style the slider */
 .slider {
     display: flex;
-    transition: transform 2s ease;
+    gap: 20px;
+    justify-content: center;
 }
 
-/* Style individual slides */
 .slide {
-    flex: 0 0 100%;
-    width: 100%;
+    flex: 0 0 auto;
+    padding: 0 10px;
 }
 
-/* Ensure images in the slides are responsive */
 .slide img {
-    height: auto;
+    width: 370px;
+    height: 240px;
     margin: auto;
+}
+
+@media (max-width: 768px) {
+    /* Change to a vertical layout on screens with a maximum width of 768px */
+    .slider {
+        flex-direction: column;
+    }
+
+    .slide {
+        padding: 10px 0; /* Adjust padding for vertical layout */
+    }
 }
