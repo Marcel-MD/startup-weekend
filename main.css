@@ -82,6 +82,8 @@ body {
 }
 
 .main-banner img {
+    width: 130%;
+    margin-left: -15%;
     position: absolute;
     top: 0;
     left: 0;
@@ -153,5 +155,6 @@ body {
 
     .main-banner img {
         width: -webkit-fill-available;
+        margin-left: 0;
     }
 }
