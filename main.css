@@ -282,4 +282,9 @@ body {
         font-weight: 600;
     }
 
+    .slide-text-description {
+        font-size: 12px;
+        line-height: 1;
+    }
+
 }
