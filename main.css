@@ -10,6 +10,7 @@ body {
     background-color: #f0f0f0; /* Change this to your desired background color */
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+
 }
 
 /* Center the container vertically and horizontally */
@@ -46,30 +47,27 @@ body {
     cursor: pointer;
     border-radius: 10px;
     text-decoration: none;
+    display: inline-flex;
+    gap: 5px;
+    width: 220px;
+    font-weight: 600;
+    line-height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.header-spacer {
-    width: 20em;
-}
+.contact-us-btn img {
+    width: 25px;
+    height: 25px;
+} 
 
-/* @media (max-width: 768px) { */
-    /* Adjust the styles for smaller screens */
-    /* .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 
-    .header--cta {
-        margin-top: 10px;
-        margin-right: 0;
-    } */
-/* } */
 
 .intro .headline {
-    font-weight: 600;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 3rem;
+    margin-top: 4rem;
 }
 
 
@@ -115,6 +113,8 @@ body {
 .slider-container {
     width: 100%;
     overflow: hidden;
+    background-color: #E8E8E8;
+    padding: 3rem 0;
 }
 
 .slider {
@@ -124,24 +124,26 @@ body {
 }
 
 .slide {
-    /* flex: 0 0 auto; */
+    width: 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    background-color: #D2D2D2;
+    /* padding: 10px; */
+    border-radius: 8px;
 }
 
 .slide img {
-    width: 270px;
-    height: 140px;
-    margin: auto;
-    border-radius: 8px;
-    /* object-fit: contain; */
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .slide-text {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 5px;
+    padding: 10px;
 }
 
 .slide-text-title {
@@ -152,6 +154,7 @@ body {
 .slide-text-description {
     font-size: 14px;
     line-height: 1.5;
+    padding-top: 7px;
 }
 
 @media (max-width: 768px) {
@@ -181,3 +184,38 @@ body {
 }
 
 
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.call-to-action .heading {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.call-to-action .contact-us-btn {
+    display: inline-flex;
+    gap: 5px;
+    width: 230px;
+    /* height: 60px; */
+    font-weight: 600;
+    line-height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.call-to-action .contact-us-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer {
+    background-color: #E8E8E8;
+    text-align: center;
+    padding: 30px 0;
+}
