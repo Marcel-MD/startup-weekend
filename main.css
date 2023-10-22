@@ -28,23 +28,22 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    height: 100px;
 }
 
 /* Style the logo in the top-left corner */
 .header--logo img {
-    width: 100px; /* Adjust the width as needed */
+    width: 120px; /* Adjust the width as needed */
     height: auto;
 }
 
 /* Style the "Contact Us" button in the top-right corner */
 .contact-us-btn {
-    background-color: #d50000; /* Change to your desired button color */
+    background-color: #055AB4; /* Change to your desired button color */
     color: #fff;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    margin-right: 10px;
     border-radius: 10px;
     text-decoration: none;
 }
@@ -66,6 +65,13 @@ body {
         margin-right: 0;
     } */
 /* } */
+
+.intro .headline {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 
 /*Images fade in/out */
 .main-banner-container {
@@ -104,11 +110,6 @@ body {
     gap: 20px;
 }
 
-.slide img {
-    width: 370px;
-    height: 240px;
-}
-
 .slider-container {
     width: 100%;
     overflow: hidden;
@@ -121,14 +122,34 @@ body {
 }
 
 .slide {
-    flex: 0 0 auto;
-    padding: 0 10px;
+    /* flex: 0 0 auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .slide img {
     width: 270px;
     height: 140px;
     margin: auto;
+    border-radius: 8px;
+    /* object-fit: contain; */
+}
+
+.slide-text {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.slide-text-title {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.slide-text-description {
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 @media (max-width: 768px) {
@@ -155,3 +176,5 @@ body {
         width: -webkit-fill-available;
     }
 }
+
+
