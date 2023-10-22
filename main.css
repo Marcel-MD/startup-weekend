@@ -52,8 +52,13 @@ body {
     width: 220px;
     font-weight: 600;
     line-height: 40px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-us-btn:hover {
+    background-color: #157be8;
 }
 
 .contact-us-btn img {
@@ -157,33 +162,6 @@ body {
     padding-top: 7px;
 }
 
-@media (max-width: 768px) {
-    /* Change to a vertical layout on screens with a maximum width of 768px */
-    .slider {
-        flex-direction: column;
-    }
-
-    .slide {
-        padding: 10px 0; /* Adjust padding for vertical layout */
-    }
-
-    .container {
-        max-width: 80%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .main-banner img {
-        width: -webkit-fill-available;
-        margin-left: 0;
-    }
-}
-
-
 .call-to-action {
     display: flex;
     flex-direction: column;
@@ -196,6 +174,7 @@ body {
 .call-to-action .heading {
     font-size: 27px;
     font-weight: 600;
+    text-align: center;
 }
 
 .call-to-action .contact-us-btn {
@@ -218,4 +197,89 @@ body {
     background-color: #E8E8E8;
     text-align: center;
     padding: 30px 0;
+}
+
+
+@media (max-width: 768px) {
+    /* Change to a vertical layout on screens with a maximum width of 768px */
+    .slider {
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-banner {
+        height: 30vh;
+    }
+
+    .main-banner img {
+        width: -webkit-fill-available;
+        margin-left: 0;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .header--logo img {
+        width: 80px;
+    }
+
+    .contact-us-btn {
+        width: 140px;
+        line-height: 14px;
+        padding: 10px;
+        justify-content: space-evenly;
+    }
+
+    .contact-us-btn span {
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .contact-us-btn img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .call-to-action .contact-us-btn {
+        width: 180px;
+        line-height: 16px;
+        padding: 12px;
+    }
+
+    .call-to-action .contact-us-btn span {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .call-to-action .contact-us-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .intro .headline {
+        font-weight: 600;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .call-to-action {
+        padding: 2rem 0;
+    }
+
+    .call-to-action .heading {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
 }
