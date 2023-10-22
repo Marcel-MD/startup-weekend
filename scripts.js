@@ -16,3 +16,6 @@ function toggleImages() {
 }
 
 toggleImages(); // Start the loop
+
+
+//slider images
